@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "iransans";
+}
+:root{
+  --firstColor: #8022f3;
+  --secondColor: #f39c22;
+  --thirdColor: #f32276;
+
+  --fs-sm: 12px;
+  --fs-md: 16px;
+  --fs-lg: 22px;
+  --fs-xl: 26px;
+}
+
+.parent{
+  width: 650px;
+  height: 150px;
+  background-color: cadetblue;
+  margin: 2rem;
+  position: relative;
+}
+
+/* .child{
+  width: fit-content;
+  background-color: rgb(177, 146, 20);
+  margin: 5px;
+} */
+/* .child1{ */
+  /* position: absolute; */
+  /* right: -10px; */
+  /* rotate: -45deg; */
+  /* left: 150px; */
+  /* top: 50px; */
+
+/* }  */
+
+/* top,left,right,bottom */
+
+
+.parag{
+  position: relative;
+}
+
+h2{
+  text-align: center;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+.title1{
+  background-color: var(--firstColor);
+}
+.title2{
+  background-color: var(--secondColor);
+}
+
+h2{
+  top: 0;
+  position: sticky;
+}
+
+
+.topNav{
+  width: 50px;
+  height: 50px;
+  background-color: rebeccapurple;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* units */
+/* 
+px
+%
+em
+rem
+vh
+vw
+*/
+.parag{
+  font-size: 14px;
+}
+.parag p{
+  font-size: var(--fs-lg)
+
+}
+
+
+
+
+
+
+/* 
+combinators: 
+
+space
+> child selector
++ next first sibling
+~ general sibling
+
+*/
+
+.content ~ p{
+  color: #8022f3;
+}

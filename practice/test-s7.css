@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'iransans';
+  }
+  @font-face {
+    font-family: 'iransans';
+    src: url(../fonts/iransansx/IRANSansXRegular.ttf);
+}
+.register_login{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color:#FFE5E5;;
+}
+form{
+    background-color: #FF6AC2;
+    margin: 20px auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+form input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #d41111;
+    padding: 10px;
+    outline: none;
+}
+.jm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form > div{
+    width: 100%;
+    margin:10px 0;
+}
+form > div input {
+    width: 100%;
+}
+.jm > div {
+    width:50%;
+} 
+.jm input {
+    width: 100%;
+}
+.register input {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(77, 77, 235);
+    color: aliceblue;
+    border: none;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    display: inline-block;
+    background-color:#5D12D2;
+    padding: 5px;
+    border-radius: 10px;
+    color:#ffffff;
+    font-weight: 600;
+}
+.frm_login{
+    /* display: none; */
+    position: relative;
+    top: -510px;
+    left: 0;
+    transition: all 2s;
+}
+input#login:checked + form.frm_login{
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+#login{
+    display: block;
+
+}
+#register{
+    display: block;
+}
+.frm_reg{
+    /* display: none; */
+    position: relative;
+    top: -510px;
+    left: 0;
+    transition: all 2s;
+}
+input#register:checked + form.frm_reg{
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}

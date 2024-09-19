@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "iransans";
+}
+@font-face {
+  font-family: 'iransans';
+  src: url(../fonts/iransansx/IRANSansXRegular.ttf);
+}
+
+.parag {
+  width: 400px;
+  height: 200px;
+  background-color: #516300;
+  padding: 15px;
+  margin: 15px auto;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.249);
+  background-image: url(../images/arizo5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  /* background-size: 100%; */
+  background-position: 50% 10%;
+  /* overflow: hidden; */
+  /* overflow: auto; */
+}
+.parag img{
+  width: 400px;
+  /* opacity: .1; */
+  /* filter: invert(1); */
+}
+.parag p {
+  /* text-align: left; */
+  /* text-align-last: center; */
+  /* text-transform: ; */
+  /* text-indent: 55px; */
+  /* letter-spacing: 5px */
+  /* line-height: 55px; */
+  /* word-spacing: 15px; */
+  /* white-space: */
+  text-shadow:  0 0 10px  rgba(255, 255, 255, 0.402);
+ 
+}
+p a {
+  color: red;
+  /* برای تگ a که لینک داره */
+  text-decoration: none;
+  /* ایندنت برای فرو رفتگی  */
+  text-indent: 10px;
+  /* لاین هیت برای فاصله ی خطوط از هم */
+  line-height: 10px;
+}
+/* سایه برای دور کادر */
+/* box-shadow: 1px 1px 10px 15px rgba(0, 0, 0, 0.249); */
+/* فونت ویت برای میزان ضخامت کلمات بدون پیکسل هست */
+/* font-weight:200; */
+

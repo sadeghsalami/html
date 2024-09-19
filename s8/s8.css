@@ -1,0 +1,65 @@
+input{
+    background-color: aqua;
+    display: block;
+    margin: 15px 0;
+    border: 3px solid;
+    outline: none;
+}
+
+input:required{
+    border-color: rgb(255, 0, 0);
+}
+
+/* input[type='number']:in-range{
+    border-color: green;
+}
+
+input[type='number']:out-of-range{
+    border-color: rgb(237, 11, 11);
+} */
+
+input:read-only{
+    border-color: gray;
+    background-color: aliceblue;
+    color: gray;
+}
+/* input:read-write{
+    border-color: rgb(7, 203, 134);
+    background-color: aliceblue;
+    color: gray;
+} */
+/* برای اینکه روی عنوان که کلیک میکنیم بره پایین و توضیحاتشو بخونه */
+p:target{
+    background-color: green;
+    color: #fff;
+}
+
+
+
+input[type='number']:valid{
+    border-color: rgb(245, 214, 16);
+}
+
+input[type='number']:invalid{
+    border-color: rgb(237, 11, 173);
+}
+
+
+/* a:visited{
+    color: yellow;
+}
+a:active{
+    color: rgb(234, 2, 2);
+}
+a:link{
+    color: green;
+}
+
+p:lang(it){
+    background-color: gray;
+} */
+
+li:not(li.sec){
+    background-color: cadetblue;
+    margin: 10px 0;
+}

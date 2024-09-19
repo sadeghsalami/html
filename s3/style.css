@@ -1,0 +1,47 @@
+/* external */
+
+
+/* 
+
+selector{
+    property: value;
+}
+
+*/
+
+/* Class name */
+main{
+    /* width: 200px; */
+    width: 100vw;
+    height: 100vh;
+    background-color: teal;
+}
+.header-1{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(128, 0, 0);
+}
+/* ID name */
+#top_header{
+    background-color:  rgb(21, 255, 0);
+}
+
+/* Tag name */
+footer{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+
+/* .content{
+    color: #fff;
+}
+ .header-1{
+    color: #fff;
+} */
+
+/* group selector */
+.content , .header-1{
+    color: #fff;
+}
+

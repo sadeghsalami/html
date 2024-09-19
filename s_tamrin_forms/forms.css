@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'iransans';
+    src: url(../fonts/iransansx/IRANSansXRegular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'iransans';
+}
+form{
+    margin: 20px auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+form input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #d41111;
+    padding: 10px;
+    outline: none;
+}
+.jm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form > div{
+    width: 100%;
+    margin:10px 0;
+}
+form > div input {
+    width: 100%;
+}
+.jm > div {
+    width:50%;
+} 
+.jm input {
+    width: 100%;
+}
+.register input {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
