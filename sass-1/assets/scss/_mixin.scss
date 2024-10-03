@@ -1,0 +1,10 @@
+@mixin d-flex($jc:center , $ai:center){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: 10px;
+}
+
+@mixin border{
+    
+}

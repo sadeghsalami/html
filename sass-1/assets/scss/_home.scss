@@ -1,0 +1,28 @@
+
+.parent {
+    background-color: darkblue;
+    // display: flex;
+    // justify-content: space-between;
+    @include d-flex();
+    padding: 15px;
+    // nested
+    a {
+      span {
+        color: #ffffff;
+      }
+    }
+    p{
+      color: yellow;
+      font-size: $fs-lg;
+      &:hover{
+          color: rebeccapurple;
+      }
+      &.parag2{
+          background-color: saddlebrown;
+      }
+      @media screen and (max-width: 768px) {
+          color: red;
+      }
+    }
+  }
+  

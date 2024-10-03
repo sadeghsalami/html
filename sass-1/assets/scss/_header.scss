@@ -1,0 +1,8 @@
+header{
+    height: 150px;
+    background-color: rgb(12, 139, 0);
+    ul{
+        @include d-flex(space-between , center);
+        height: 100%;
+    }
+}
