@@ -1,28 +1,64 @@
-
 .parent {
-    background-color: darkblue;
-    // display: flex;
-    // justify-content: space-between;
-    @include d-flex();
-    padding: 15px;
-    // nested
-    a {
-      span {
-        color: #ffffff;
-      }
+  background-image: linear-gradient(to right, #64045b, #b137ea);
+  width: 100%;
+  height: 300px;
+  // display: flex;
+  // justify-content: space-between;
+  margin-top: 0;
+  @include c-flex(center, center);
+  padding: 15px;
+  .dota{
+    @include d-flex(start, center);
+
+  }
+  // nested
+  a {
+    color: $head-color;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  ul {
+    @include d-flex(center, center);
+    color: $head-color;
+    cursor: pointer;
+  }
+
+  p {
+    @include d-flex(start, center);
+    color: $head-color;
+    font-size: $fs-lg;
+    &:hover {
+      color: rgb(0, 0, 0);
     }
-    p{
-      color: yellow;
-      font-size: $fs-lg;
-      &:hover{
-          color: rebeccapurple;
-      }
-      &.parag2{
-          background-color: saddlebrown;
-      }
-      @media screen and (max-width: 768px) {
-          color: red;
-      }
+    &.parag2 {
+      color: $head-color;
+      font-size: 30px;
+      bottom: 0;
+      padding-top: 30px;
+    }
+    @media screen and (max-width: 768px) {
+      color: red;
     }
   }
-  
+}
+.products {
+  @include d-flex(center, center);
+  flex-wrap: wrap;
+  > div{
+    > div{
+      @include c-flex();
+    }
+  }
+}
+// .product1 {
+//   .web {
+//   }
+// }
+// .product2 {
+//   @include c-flex();
+// }
+// .product3 {
+//   @include c-flex();
+// }

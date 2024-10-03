@@ -1,9 +1,25 @@
-@mixin d-flex($jc:center , $ai:center){
+@mixin d-flex($jc:start , $ai:center){
     display: flex;
     justify-content: $jc;
     align-items: $ai;
-    gap: 10px;
+    gap: 30px;
+    padding: 20px 30px;
+    list-style:none;
 }
+
+@mixin c-flex($jc:center , $ai:center){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: column;
+}
+@mixin design1{
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 @mixin border{
     

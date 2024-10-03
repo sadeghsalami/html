@@ -1,42 +1,136 @@
-header {
-  height: 150px;
-  background-color: rgb(12, 139, 0);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazir;
 }
-header ul {
+
+.container {
+  margin: 15px auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/vazir-font-v18.0.0/Vazir.eot"), url("../fonts/vazir-font-v18.0.0/Vazir.woff") format("woff"), url("../fonts/vazir-font-v18.0.0/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  background-color: rgb(127, 26, 195);
+  color: aliceblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  height: 100%;
+  gap: 30px;
+  padding: 20px 30px;
+  list-style: none;
 }
-
-.footer {
-  background-color: gray;
-}
-
-.parent {
-  background-color: darkblue;
+header ul {
+  cursor: pointer;
+  color: aliceblue;
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
+  padding: 20px 30px;
+  list-style: none;
+}
+header a {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 104, 195);
+  padding: 15px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.footer {
+  background-image: linear-gradient(45deg, #f24cfa, #9c36dc);
+  height: 500px;
+  width: 100%;
+}
+.footer .end {
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.parent {
+  background-image: linear-gradient(to right, #64045b, #b137ea);
+  width: 100%;
+  height: 300px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 15px;
 }
-.parent a span {
-  color: #ffffff;
+.parent .dota {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 30px;
+  list-style: none;
+}
+.parent a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 50px;
+}
+.parent ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 30px;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
 }
 .parent p {
-  color: yellow;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 30px;
+  list-style: none;
+  color: #fff;
   font-size: 18px;
 }
 .parent p:hover {
-  color: rebeccapurple;
+  color: rgb(0, 0, 0);
 }
 .parent p.parag2 {
-  background-color: saddlebrown;
+  color: #fff;
+  font-size: 30px;
+  bottom: 0;
+  padding-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .parent p {
     color: red;
   }
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 30px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.products > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=main.min.css.map */
