@@ -1,6 +1,7 @@
 header{
     width: 100%;
-    background-color: rgb(127, 26, 195);
+    height: 55px;
+    background-color: #4c2a80;
     color: aliceblue;
     @include d-flex(space-between,center);
     
@@ -9,12 +10,14 @@ header{
         color: aliceblue;
         list-style: none;
         @include d-flex(center,center);
+        margin-right: 140px;
     }
     a{
         background-color: rgb(255, 255, 255);
         color: rgb(0, 104, 195);
-        padding: 15px;
+        padding: 5px 10px;
         border-radius: 40px;
         text-decoration: none;
+        margin-left: 100px;
     }
 }
