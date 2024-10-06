@@ -29,6 +29,9 @@
     justify-content: $jc;
     align-items: $ai;
     flex-direction: column;
+    padding: 63px 0px;
+    list-style:none;
+    margin-top: 15px;
 }
 @mixin design1{
     color: white;

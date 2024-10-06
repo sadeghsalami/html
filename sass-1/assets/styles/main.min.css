@@ -70,6 +70,9 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 63px 0px;
+  list-style: none;
+  margin-top: 15px;
   padding: 0 15px;
   margin-top: 0;
 }
@@ -166,6 +169,9 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 63px 0px;
+  list-style: none;
+  margin-top: 15px;
   gap: 45px;
 }
 
@@ -174,6 +180,9 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 63px 0px;
+  list-style: none;
+  margin-top: 15px;
 }
 .pishnahad-toshan p {
   font-size: 2rem;
@@ -222,5 +231,45 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 63px 0px;
+  list-style: none;
+  margin-top: 15px;
   gap: 45px;
+}
+
+.hosts {
+  margin: 15px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  padding: 63px 0px;
+  list-style: none;
+  margin-top: -60px;
+}
+.hosts > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 63px 0px;
+  list-style: none;
+  margin-top: 15px;
+  gap: 25px;
+}
+.hosts h1 {
+  font-size: 1.3rem;
+  color: #2c2a2b;
+}
+.hosts h2 {
+  margin-top: 55px;
+  font-size: 16px;
+  color: #5a5658;
+}
+.hosts h5 {
+  margin-top: 55px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: #3482ff;
 }/*# sourceMappingURL=main.min.css.map */
