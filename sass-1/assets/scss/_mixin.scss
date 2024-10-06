@@ -6,7 +6,24 @@
     padding: 20px 0px;
     list-style:none;
 }
-
+@mixin k-flex($jc:start , $ai:center){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: 140px;
+    padding: 63px 0px;
+    list-style:none;
+    margin-top: -60px;
+}
+@mixin j-flex($jc:start , $ai:center){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: 140px;
+    padding: 63px 0px;
+    list-style:none;
+    margin-top: 15px;
+}
 @mixin c-flex($jc:center , $ai:center){
     display: flex;
     justify-content: $jc;
