@@ -5,6 +5,18 @@
   .end{
     @include design1;
   }
+  .end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .sma {
+    color: white;
+    &::before{
+      content: '^';
+    }
+  }
 }
 
 // partial

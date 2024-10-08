@@ -138,16 +138,17 @@
   }
 }
 .hosts {
-  margin: 15px 200px;
+   margin: 15px 200px;
    @include k-flex(center , center);
   > div{
     > div{
       @include c-flex(center , center);
-      gap: 25px;
+      gap: 15px;
     }
   }
   h1
   {
+    margin-top: 35px;
     font-size:1.3rem;
     color: #2c2a2b
   }
