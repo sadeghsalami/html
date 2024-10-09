@@ -1,21 +1,26 @@
 .footer {
   background-image: linear-gradient(45deg, #f24cfa , #9c36dc);
-  height: 500px;
-  width: 100%;
-  .end{
-    @include design1;
-  }
+  height: auto;
+  width: auto;
+  position: relative;
   .end{
     display: flex;
     justify-content: center;
     align-items: center;
-
-  }
-  .sma {
+    gap: 180px;
     color: white;
-    &::before{
-      content: '^';
-    }
+    padding: 20px;
+    margin-top: 45px;
+  }
+  .sma , .km , .kh , .hd {
+    margin-top: 20px;
+  }
+  img{
+    width: 200px;
+    position: absolute;
+    bottom:80px;
+    left: 80px;
+    box-shadow: 2px rgba(36, 0, 0, 0.593);
   }
 }
 

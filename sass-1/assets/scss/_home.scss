@@ -164,4 +164,49 @@
     padding: .5rem;
     color:  #3482ff;
   }
+  
+  }
+  .eftekhar{
+    color: #393537b3;
+    display: flex;
+    justify-content: center;
+  }
+  .brand{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 200px;  
+      margin-top: 85px;
+      img{
+        filter: brightness(.5);
+        &:hover{
+          transition: .2;
+          filter: none;
+        }
+      }
+  }
+  .keyfiat{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0;
+    span{
+      color: #6520c4;
+    }
+  }
+  .toshan_instagram{
+    z-index: 10;
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: .95;
+    padding: 10px 0;
+    text-align: center;
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    a{
+      color: antiquewhite;
+      text-decoration: none;
+    }
   }
