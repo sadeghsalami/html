@@ -1,3 +1,10 @@
+
+%border{
+  border: 1px solid #28a745;
+  border-radius: 10px;
+}
+
+
 .parent {
   background-image: linear-gradient(90deg, rgba(100, 32, 195, 1) 0%, rgba(100, 32, 195, 1) 10%, rgba(179, 96, 250, 1) 100%);
   width: 100%;
@@ -20,11 +27,19 @@
     @include d-flex(center, center);
     color: $head-color;
     cursor: pointer;
-    li::after{
-      content: '^'
-    }
-    li:hover{
-      rotate: 180deg;
+    li{
+      &::after{
+        content: '\27A4';
+        display: inline-block;
+        rotate: 180deg;
+        font-size: small;
+      }
+      &:hover{
+        
+        &::after{
+         rotate: 90deg;
+        }
+      }
     }
     
   }
@@ -84,6 +99,7 @@
 }
 .pishnahad-toshan{
   @include c-flex(center,center);
+  @extend %border;
   p{
     font-size:$fs-middle ;
     span{
@@ -102,8 +118,12 @@
 //   @include c-flex();
 // }
 .licenses {
+  > div{
+    @extend %border;
+  }
   h1
   {
+
     font-size:1.3rem;
     color: #2c2a2b
   }
@@ -150,12 +170,12 @@
   {
     margin-top: 35px;
     font-size:1.3rem;
-    color: #2c2a2b
+    color: #2c2a2b;
   }
   h2{
     margin-top: 55px;
     font-size: 16px;
-    color: #5a5658
+    color: #5a5658;
   }
   h5{
     margin-top: 55px;
@@ -176,7 +196,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      gap: 200px;  
+      gap: 135px;  
       margin-top: 85px;
       img{
         filter: brightness(.5);
@@ -202,11 +222,19 @@
     width: 100%;
     bottom: 0;
     opacity: .95;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
     background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     a{
       color: antiquewhite;
       text-decoration: none;
+      padding: 15px 10px;
+    }
+    .i{
+        color: white;
+        padding: 35px;
     }
   }
+
+
+

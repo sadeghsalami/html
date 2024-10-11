@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 .container {
-  margin: 15px auto;
+  margin: 0 auto;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -56,24 +57,69 @@ header a {
   width: auto;
   position: relative;
 }
+.footer li {
+  list-style: none;
+}
+.footer li::before {
+  content: ">";
+  margin-left: 2px;
+}
+.footer h2 {
+  border-bottom: 3px solid white;
+  padding: 10px 0;
+}
 .footer .end {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 180px;
   color: white;
   padding: 20px;
   margin-top: 45px;
 }
-.footer .sma, .footer .km, .footer .kh, .footer .hd {
-  margin-top: 20px;
+.footer .kd {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .footer img {
   width: 200px;
-  position: absolute;
-  bottom: 80px;
-  left: 80px;
   box-shadow: 2px rgba(36, 0, 0, 0.593);
+  padding: 5px;
+  box-shadow: 2px 2px 2px 2px #fc2a0e;
+}
+
+.copy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: aliceblue;
+  background-color: #4c2a80;
+  padding: 5.5rem;
+  position: relative;
+}
+.copy-right p {
+  position: absolute;
+  top: 35px;
+  right: 150px;
+}
+.copy-right .icon-end {
+  display: flex;
+  gap: 15px;
+  padding-right: 20px;
+  position: absolute;
+  top: 35px;
+  left: 220px;
+  cursor: pointer;
+}
+.copy-right .icon-end .i {
+  padding-left: 50px;
+}
+
+.licenses > div, .pishnahad-toshan {
+  border: 1px solid #28a745;
+  border-radius: 10px;
 }
 
 .parent {
@@ -113,10 +159,13 @@ header a {
   cursor: pointer;
 }
 .parent ul li::after {
-  content: "^";
-}
-.parent ul li:hover {
+  content: "➤";
+  display: inline-block;
   rotate: 180deg;
+  font-size: small;
+}
+.parent ul li:hover::after {
+  rotate: 90deg;
 }
 .parent p {
   display: flex;
@@ -300,7 +349,7 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 200px;
+  gap: 135px;
   margin-top: 85px;
 }
 .brand img {
@@ -328,11 +377,16 @@ header a {
   width: 100%;
   bottom: 0;
   opacity: 0.95;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
   background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 .toshan_instagram a {
   color: antiquewhite;
   text-decoration: none;
+  padding: 15px 10px;
+}
+.toshan_instagram .i {
+  color: white;
+  padding: 35px;
 }/*# sourceMappingURL=main.min.css.map */
