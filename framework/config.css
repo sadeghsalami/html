@@ -1,0 +1,12 @@
+.nav1{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 2px 6px;
+}
+.btn-d-flex button{
+    width: 60px;
+}
+.nav1 .img1 img{
+    width: 110px;
+    padding: 5px 30px;
+}
